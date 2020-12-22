@@ -1,0 +1,515 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <script src="https://skill-test-refactory.herokuapp.com/js/app.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home - Refactory</title>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Background Header Image -->
+        <div class="header-image" style="background-image:url('image/homepage.jpg');">
+            <div class="overlay" style="background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%);"></div>
+
+            <nav class="navbar navbar-expand-md navbar-dark absolute-top nav-content">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/refactorylogo.png" alt="" width="125" height="52">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active navbar-right">
+                                <a class="nav-link" href="/home">Home</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="https://refactory.id/custom-trainings/">Custom Trainings</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="https://refactory.id/case-studies/">Case Studies</a>
+                            </li>
+                            <li class="nav-item navbar-right">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- {{-- Header Content --}} -->
+            <div class="container">
+                <div class="head-container">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-12">
+                            <div class="row head-content">
+                                <div class="col-md-12 head-header">
+                                    <h1>
+                                        Empowering <span class="orange-text">People</span> Through Programming
+                                    </h1>
+                                </div>
+                                <div class="col-md-12 head-desc">
+                                    <p>
+                                        Refactory adalah perusahaan edukasi dan teknologi yang menyediakan layanan
+                                        lengkap berupa course maupun custom training yang materinya dapat disesuaikan
+                                        dengan kebutuhan teknologi dan bisnis perusahaan Anda.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row head-button">
+                                <div class="col-md-6 col-sm-12">
+                                    <a href="https://refactory.id/contact/" type="button" class="btn-left">
+                                        <span>
+                                            Temukan Solusi Anda
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <a href="https://enroll.refactory.id/?_ga=2.247431172.122677503.1608426137-249682499.1608426137"
+                                        type="button" class="btn-right">
+                                        <span>
+                                            Tingkatkan Skill Anda
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner text-light">
+                <p style="partner-text">PARTNER EKSLUSIF KAMI</p>
+
+                <div class="partner-widget">
+                    <div class="container">
+
+                        <div id="partnerCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item no-gutters active pt-2">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/gojek.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/univterbuka.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/keller.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/pindad.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/mandiri.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/mitsubishi.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item no-gutters ">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/qasir.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/gigagame.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/yobalk.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/berliansistem.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/esdm.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                        <div class="mr-5" class="carousel-icon">
+                                            <img src="image/um.png" alt="" style="object-fit:contain;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- {{-- Navigation --}} -->
+
+    </header>
+
+    <!-- {{-- Body Content --}} -->
+    <main class="body-container text-center">
+
+        <!-- {{-- First Content --}} -->
+        <div class="container">
+            <h2>Apa Yang Refactory dapat Bantu?</h2>
+            <div class="first-content pt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="image/material_approval.png" alt="" class="pb-3">
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Memperkuat Tim Engineer Anda</h3>
+                            <p class="first-content-desc">
+                                Bisnis di jaman modern membutuhkan keterampilan pengembangan terbaik untuk meningkatkan
+                                skala produk. Kami dapat mempersiapkan course dan juga dapat menyediakan tim yang
+                                menangani kebutuhan digital Anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="image/material_bolt.png" alt="" class="pb-3">
+                        </div>
+                        <div class="col-md-12">
+                            <h3>Wujudkan Software Impian Anda</h3>
+                            <p class="first-content-desc">Kami adalah perusahaan One-Stop IT Solution untuk proyek Anda,
+                                membantu di setiap tahap mulai dari menyusun ide, melalui desain dan pengembangan
+                                aplikasi seluler, situs web dan aplikasi desktop, hingga peluncuran produk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- {{-- Second Content --}} -->
+        <div class="second-content" style="background-image:url('image/ripple-bg.png')">
+            <div class="container">
+                <h5>INSIGHT TERBARU</h5>
+                <h2>Knowledge Sharing</h2>
+
+                <!-- {{-- Third Content --}} -->
+                <div class="third-content">
+                    <a href="#" class="third-content-link">Lihat Semua <i aria-hidden="true"
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- {{-- Fourth Content --}} -->
+        <div class="fourth-content">
+            <div class="container">
+                <h2>AS SEEN ON</h2>
+                <div class="row fourth-widget-content">
+
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://www.cnnindonesia.com/teknologi/20171007074240-192-246767/menakar-peluang-karier-ahli-bahasa-pemrograman-di-indonesia/">
+                            <img src="image/cnn.png" alt="" style="object-fit:contain; padding-top:1rem;">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://www.medcom.id/teknologi/news-teknologi/ob3Bgq8N-startup-refactory-ingin-naikkan-level-programmer-indonesia">
+                            <img src="image/medcom.png" alt="" style="object-fit:contain">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://www.beritasatu.com/archive/451323/coder-dan-programmer-komputer-paling-dicari-di-dunia-kerja-modern">
+                            <img src="image/beritasatu.png" alt="" style="object-fit:contain;padding-top:1.2rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://kumparan.com/aditya-panji/melihat-peluang-di-tengah-kebutuhan-profesi-programmer-di-indonesia">
+                            <img src="image/kumparan.png" alt="" style="object-fit:contain;padding-top:0.6125rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://tech.idntimes.com/trend/indra/bukti-belajar-coding-itu-keren-refactory-resmi-wisuda-13-lulusan-siap-saing">
+                            <img src="image/indtimes.png" alt="" style="object-fit:contain;padding-top:1rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a href="http://m.viva.co.id/digital/955039-pasar-coding-di-indonesia-masih-terbuka-lebar">
+                            <img src="image/viva.png" alt="" style="object-fit:contain;padding-top:0.6rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-none col-xs-6 fourth-widget-clear">
+
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a href="https://mediaindonesia.com/humaniora/122152/5-peluang-pekerjaan-untuk-para-coder">
+                            <img src="image/mediaindonesia.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://m.tribunnews.com/techno/2017/09/25/programmer-semakin-menjanjikan-refactory-pilih-yogyakarta-jadi-markas-kedua">
+                            <img src="image/tribun.png" alt="" style="object-fit:contain;padding-top:1.5rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a
+                            href="https://www.jawapos.com/oto-dan-tekno/teknologi/26/09/2017/bawa-misi-ini-bos-refactory-id-pilih-jogja-jadi-markas-kedua/">
+                            <img src="image/jawapos.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget">
+                        <a href="https://inilah.com/ototekno/2403411/peran-coder-dan-programer-indonesia-di-masa-depan">
+                            <img src="image/inilahcom.png" alt="" style="object-fit:contain;padding-top:1.5rem;">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-6 fourth-widget-clear">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="row d-lg-flex justify-content-between">
+                    <div class="col-lg-7 col-sm-12 footer-left">
+                        <div class="row">
+                            <div class="col-md-4 footer-space">
+                                <h5 class="footer-header">Site Map</h5>
+                                <ul>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Home
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Bootcamp
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Software Development
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Courses
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Custom
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Trainings
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Blog
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 footer-space">
+                                <h5 class="footer-header">Company</h5>
+                                <ul>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                About Us
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Career <span
+                                                    style="background: #929292; color: black; border-radius: 4px; padding: 2px 6px;">We’re
+                                                    Hiring</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Press Kit
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                FAQ
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5 class="footer-header">Connect</h5>
+                                <ul>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Facebook
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Instagram
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                Youtube
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" type="button" class="footer-link">
+                                            <span class="btn-text">
+                                                LinkedIn
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 footer-right">
+                        <ul>
+                            <li class="footer-logo">
+                                <span class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.1 512" width="15"
+                                        height="15">
+                                        <path
+                                            d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1 0 53.8 0s53.8 24.1 53.8 53.8-24.1 54.3-53.8 54.3zM448 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448h-.1z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="footer-logo">
+                                <span class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" width="15"
+                                        height="15">
+                                        <path
+                                            d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="footer-logo">
+                                <span class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="15"
+                                        height="15">
+                                        <path
+                                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="footer-logo">
+                                <span class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15"
+                                        height="15">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </li>
+
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="footer-header">Company Address</h5>
+                                <p>Jln. Palagan Tentara Pelajar
+                                    Km. 9,8
+                                    Ngaglik, Kab. Sleman
+                                    DI Yogyakarta 5558</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="footer-header">Contact</h5>
+                                <p>marketing@refactory.id
+                                    +62 8122 8203 381
+
+                                    Dewita: 0857 2582 7222
+                                    Septin: 0878 2080 0206</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+    <script type="text/javascript">
+        $(".carousel").swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll: "vertical"
+        });
+    </script>
+</body>
